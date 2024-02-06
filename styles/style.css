@@ -1,0 +1,687 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Zen Kaku Gothic New';
+  margin: 0;
+  padding: 0;
+}
+.loading {
+  width: 100%;
+  height: 100vh;
+  background-color: #007AB7;
+  z-index: 1000;
+  position: fixed;
+}
+.loading.hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 500ms;
+}
+.loadinglogo{
+  width: 318px;
+  height: 128px;
+  position: absolute;
+  top: 320px;
+  left: 524px;
+  background-color: #007AB7;
+  animation: fadeIn 5s ease 0.3s infinite normal;
+}
+.loadinglogo img {
+  width: 318px;
+  height: 128px;
+}
+.headerTop, .headerBottom, .headerSns, .introTop, .introBottom,
+.travel, .event, .information, .footer {
+  margin: 0 83px;
+  width: 1200px;
+}
+.headerTop ul, .headerSns, .list1, .list2, .footerList {
+  padding: 0;
+}
+h1, .h1Gallery, .h1Travel, .h1Event {
+  font-size: 48px;
+  margin-top: 20px;
+}
+h2 {
+  font-size: 32px;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+h3 {
+  font-size: 36px;
+}
+h4 {
+  font-weight: bold;
+}
+h6 {
+  font-size: 40px;
+}
+.menu li {
+  font-size: 24px;
+}
+p, h4, h5, .list1 li, .list2 li, .footerList li {
+  font-size: 20px;
+}
+.copyRight {
+  font-size: 12px;
+}
+header {
+  height: 768px;
+  background-image: url(../images/top.png);
+  background-size: cover;
+  padding: 20px 20px 0 20px;
+}
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  align-items: flex-end;
+}
+.menu li {
+  margin-left: 20px;
+}
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.headerBottom {
+  margin: 80px 83px 24px;
+}
+.imgHeader1 {
+  width: 133px;
+  height: 54px;
+}
+.imgHeader2 {
+  width: 780px;
+  height: 314px;
+}
+.headerSns {
+  display: flex;
+  flex-direction: column;
+}
+.headerSns img {
+  margin-bottom: 40px;
+}
+.imgSns3 {
+  width: 32px;
+  height: 32px;
+}
+.introduction1, .introduction2 {
+  height: 458px;
+}
+.introTop, .introBottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 20px;
+}
+.introLeft1, .introLeft2 {
+  height: 298px;
+}
+.introLeft2 {
+  margin-right: 104px;
+}
+.introLeft1 h1 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.introduction1 {
+  background-image: url(../images/introBack1.png);
+}
+.introduction2 {
+  background-image: url(../images/introBack2.png);
+}
+.imgIntro1 {
+  width: 104px;
+  height: 78px;
+  display: block;
+  margin: 0 auto;
+}
+.imgIntro2, .imgIntro3 {
+  width: 636px;
+  height: 298px;
+}
+.gallery {
+  width: 100%;
+  height: 947px;
+}
+.gallery h1 {
+  margin-left: 103px;
+}
+.gallery img {
+  width: 295px;
+  height: 467px;
+}
+.h1Gallery {
+  margin-bottom: 160px;
+}
+.test__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.slider {
+  width: 1200px;  
+  max-width: 1200px;
+  margin: 15px auto;
+  }
+.sliderItem {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.sliderItem img {
+  height: auto;
+  width: 295px;
+}
+.slick-prev:before, .slick-next:before {
+  color: gray;
+}
+.travel {
+  height: 1007px;
+}
+.travelContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 120px 80px 0 80px;
+}
+.travelLeft {
+  width: 420px;
+  display: flex;
+  align-items: center;
+}
+.imgTravel1 {
+  width: 400px;
+  height: 611px;
+}
+.event {
+  height: 1419.2px;
+}
+.eventContainer {
+  margin-top: 120px;
+}
+.eventTop {
+  height: 472px;
+  margin-bottom: 80px;
+}
+.eventBottom {
+  height: 551.2px;
+}
+.eventTop, .eventBottom {
+  display: flex;
+  justify-content: space-between;
+}
+.eventRight1, .eventRight2 {
+  width: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.eventTitle1 {
+  margin-bottom: 10px;
+  line-height: 57.6px;
+}
+.eventTitle2 {
+  margin-bottom: 40px;
+  line-height: 57.6px;
+}
+.eventRight1 h5, .eventRight2 h5 {
+  margin: 32px 0;
+}
+.imgEvent1, .imgEvent2 {
+  width: 580px;
+  height: 396px;
+}
+.information {
+  height: 720px;
+}
+.infoContainer {
+  border: 1px solid black;
+  width: 1040px;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px;
+}
+.infoContainer h6 {
+  margin: 40px 0 80px 0;
+}
+.infoList {
+  display: flex;
+}
+.list1 {
+  margin: 0 60px 0 40px;
+}
+.infoList ul {
+  width: 470px;
+  height: 320px;
+  line-height: 32px;
+}
+footer {
+  background-color: rgba(0, 122, 183, 0.9);
+}
+.footer {
+  height: 489px; 
+  display: flex;
+  flex-direction: column;
+}
+.footerContainer {
+  display: flex;
+  border-bottom: 1px solid #03A9F4;
+  padding-bottom: 20px;
+}
+.footerLeft {
+  width: 332px;
+  height: 292px;
+}
+.footerList {
+  width: 332px;
+}
+.footerList li {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ffffff;
+}
+.footerList a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footerCenter, .footerRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.footerCenter {
+  margin-left: 120px;
+}
+.footerRight {
+  margin-left: 269.1px;
+}
+.footerRight img {
+  margin-left: 40px;
+}
+.imgFooter1 {
+  width: 64px;
+  height: 48px;
+  margin: 40px auto 28px;
+}
+.imgFooter2 {
+  width: 256px;
+  height: 103px;
+}
+.copyRight {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+}
+.h1Gallery, .h1Travel, .h1Event {
+  height: 96px;
+  line-height: 96px;
+  background-image: url(../images/titleBack.png);
+  background-size: 530px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  text-align: left;
+  padding-left: 103px;
+}
+.h1Travel {
+  text-align: right;
+  background-position: right;
+  padding: 0 103px 0 0;
+}
+span {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+.pText1, .pText2 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.pText1 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  line-height: 32px;
+}
+.pText2 {
+  width: 314px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.menuBtn, .imgMenu, .menu2,
+.hamburger img, .batu img, .dorowaMeun, .logo img {
+  display: none;
+}
+.headerBottom img {
+  margin-left: 140px;
+}
+#nav {
+  line-height: 3.2;
+}
+@media screen and (max-width: 768px) {
+  body, .introLeft2, .travelLeft, .event, .eventLeft1, .eventLeft2,
+  .footerLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .loadinglogo{
+    width: 318px;
+    height: 128px;
+    position: absolute;
+    top: 275px;
+    left: 44px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #007AB7;
+    animation: fadeIn 5s ease 0.3s infinite normal;
+  }
+  .loadinglogo img {
+    width: 287px;
+    height: 117px;
+  }
+  .loading {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+  }
+  .introTop, .introBottom, .travelContainer, .eventTop, .eventBottom,
+  .infoList, .footerContainer, .footerLeft, .menu,
+  .hamburger img, .batu img, .dorowaMeun, .logo img {
+    display: block;
+  }
+  header, .headerTop, .introTop, .introBottom,
+  .gallery, .travel, .travelLeft, .event, .information, .footer {
+    width: 375px;
+  }
+  .headerBottom, .headerSns, .introLeft1, .introleft2,
+  .eventRight1, .eventRight2 {
+    width: 335px;
+  }
+  .headerTop, .headerBottom, .headerSns, .introTop, .introBottom,
+  .travel, .event, .information, .list1, .footer {
+    margin: 0;
+  }
+  header {
+    height: 667px;
+  }
+  .introduction1, .introduction2 {
+    height: 403px;
+  }
+  .introLeft1, .introLeft2 {
+    height: 188px;
+  }
+  .gallery {
+    height: 685px;
+  }
+  .travel {
+    height: 807.8px;
+  }
+  .event {
+    height: 1250px;
+  }
+  .information {
+    height: 624px;
+  }
+  .footer {
+    height: 349px;
+  }
+  .imgHeader2, .imgIntro2, .imgIntro3, .imgEvent1, .imgEvent2 {
+    width: 335px;
+  }
+  .imgHeader2, .imgIntro2, .imgIntro3 {
+    height: 135px;
+  }
+  .imgEvent1, .imgEvent2 {
+    height: 194px;
+  }
+  .imgTravel1 {
+    width: 255px;
+    height: 406.8px;
+    margin: 44px 60px 0;
+  }
+  .imgFooter2 {
+    width: 71px;
+    height: 28px;
+  }
+  .imgIntro1, .imgFooter1 {
+    width: 32px;
+    height: 24px;
+  }
+  .infoContainer {
+    width: 335px;
+    height: 544px;
+    margin: 20px 20px 0 20px;
+  }
+  .h1Travel {
+    text-align: initial;
+    background-position: initial;
+    padding: initial;
+  }
+  .h1Gallery, .h1Travel, .h1Event {
+    font-size: 24px;
+    height: 65px;
+    line-height: 96px;
+    background-image: url(../images/titleBack.png);
+    background-size: 220px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding-left: 30px;
+    margin: 20px 77.5px;
+  }
+  h1, h3, h6 {
+    font-size: 20px;
+  }
+  h2, h4, h5, p, .list1 li, .list2 li {
+    font-size: 12px;
+  }
+  span {
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+  .imgHeader1 {
+    display: none;
+  }
+  .imgHeader2 {
+    margin-top: 180px;
+    margin-bottom: 126px;
+  }
+  .introTop, .introBottom {
+    padding: 20px;
+  }
+  .introTop h1 {
+    margin-top: 40px;
+  }
+  .introTop h2 {
+    text-decoration: underline;
+    border: none;
+  }
+  .introLeft2 {
+    margin-right: 0;
+  }
+  .pText1, .pText2 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    line-height: 19.2px;
+    width: 223px;
+  }
+  .gallery h1 {
+    margin-left: 77.5px;
+  }
+  .slider {
+    width: 355px;
+    max-width: 355px;
+    margin: 15px auto;
+    }
+  .sliderItem {
+    margin-left: 30px;
+    margin-right: 5px;
+  }
+  .slick-track {
+    width: 335px;
+  }
+  .travelContainer {
+    margin: 60px 0 0 0;
+  }
+  .eventContainer {
+    margin-top: 40px;
+  }
+  .eventTop {
+    margin-bottom: 40px;
+  }
+  .eventTitle2 {
+    margin-bottom: 8px;
+  }
+  .eventTitle1 {
+    margin-bottom: 0;
+  }
+  .eventRight1 h4, .eventRight2 h4 {
+    margin-top: 20px;
+  }
+  .eventRight1 h5, .eventRight2 h5 {
+    margin: 8px 0 20px;
+  }
+  .infoList ul {
+    width: 295px;
+    height: 192px;
+    line-height: 19.2px;
+  }
+  .infoContainer h6 {
+    margin: 20px 0 40px 0;
+  }
+  .footer {
+    height: 349px;
+    position: relative;
+  }
+  .imgFooter1 {
+    width: 32px;
+    height: 24px;
+    margin: 20px auto;
+  }
+  .footerContainer {
+    display: block;
+    width: 375px;
+    height: 258px;
+    margin: 0;
+  }
+  .footerLeft {
+    width: 195px;
+    height: 167px;
+    margin: 0 auto;
+  }
+  .footerList li {
+    width: 197px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 12px;
+    padding-bottom: 6px;
+  }
+  .imgFooter2 {
+    width: 71px;
+    height: 28px;
+    position: absolute;
+    top: 275px;
+    left: 20px;
+  }
+  .footerRight {
+    position: absolute;
+    top: 271px;
+    left: 95px;
+    margin-left: 0;
+  }
+  .footerRight img {
+    margin-left: 20px;
+  }
+  .copyRight {
+    margin: 0 auto;
+  }
+  .hamburger {
+    position: fixed;
+    top: 10px;
+    right: 60px;
+  }
+  .menu li a{
+    border-bottom: 1px solid #ffffff;
+    margin-left: 0;
+  }
+  .menu {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    font-weight: bold;
+    margin: 216px 0 0 0;
+    text-align: center;
+  }
+  .dorowaTop {
+    margin-bottom: 40px;
+  }
+  .dorowaTaipei,
+  .dorowaTainan {
+    margin-bottom: 20px;
+  }
+  .dorowaTaityu,
+  .dorowaPurisi {
+    margin-bottom: 40px;
+  }
+  .logo {
+    width: 101px;
+    height: 40px;
+    position: relative;
+    display: block;
+  }
+  .dorowaMeun {
+    font-size: 24px;
+    line-height: 24px;
+    position: absolute;
+    top: 132px;
+    left: 84px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .batu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+  }
+  .hamburger,
+  .dorowaMeun {
+    display: block;
+  }
+  #nav {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 225px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99;
+  }
+  .show {
+    transform: translate3d(-270px, 0, 0);
+    margin-right: -20px;
+  }
+  #nav {
+    transition:all 300ms;
+  }
+  .logo img {
+    width: 101px;
+    height: 40px;
+  }
+  .dorowaMeun {
+    color: #ffffff;
+  }
+  .menu li {
+    font-size: 20px;
+  }
+  .headerBottom img {
+    margin-left: 0;
+  }
+}
+
+
